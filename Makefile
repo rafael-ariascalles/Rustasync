@@ -7,18 +7,18 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format-check:
-	cargo fmt --quiet --manifest-path main/Cargo.toml
+	cargo fmt --quiet --manifest-path rustasync/Cargo.toml
 
 lint:
-	cargo clippy --quiet --manifest-path main/Cargo.toml
+	cargo clippy --quiet --manifest-path rustasync/Cargo.toml
 
 test:
-	cargo test --quiet --manifest-path main/Cargo.toml
+	cargo test --quiet --manifest-path rustasync/Cargo.toml
 
 run:
-	cargo run --manifest-path main/Cargo.toml
+	cargo run --manifest-path rustasync/Cargo.toml
 
 build-release:
-	cargo build --release --manifest-path main/Cargo.toml
+	cargo build --release --manifest-path rustasync/Cargo.toml
 
 all: format lint test run
